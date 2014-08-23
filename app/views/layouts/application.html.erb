@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AngularRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, intitial-scale=1.0'>
+  <!-- <link rel="stylesheet" type="text/css" href="home.css"> -->
+</head>
+<body>
+  <div ng-app="MyApp">
+  <div class="container">
+    <div class="header">
+      <ul class="nav navbar-nav pull-right">
+        <a href="/">Home </a>|
+        <a href="#/create">Create </a>|       
+        <a href="#/play">Play </a>|        
+      </ul>
+    </div><!-- header -->
+    <hr>
+    <div ng-view=""><!-- angular 'yield' -->
+    </div>
+  </div><!-- container -->
+</div><!-- ng-app ng-controller -->
+
+</body>
+</html>
