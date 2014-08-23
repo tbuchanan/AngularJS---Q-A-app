@@ -23,4 +23,20 @@ MyApp.config(function($routeProvider){
     .otherwise({ redirectTo: '/' });
 });
 
+MyApp.factory('Quiz', function(){
+
+  var data = [{q: 'Are you ready?', a: 'yes'}];
+
+    return {
+      getData: function() {
+        return data;
+      }
+    }
+
+});
+
+
+
+
+
 

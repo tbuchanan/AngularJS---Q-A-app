@@ -1,1 +1,15 @@
-create salsa
+<h1>Enter Questions</h1>
+<p>Total Questions: {{getTotal()}}</p>
+
+<ul>
+  <li ng-repeat="q in quiz">{{ q.q }} | {{ q.a }}</li>
+</ul>
+<!-- <p>{{formQuestion}} {{formAnswer}}</p> -->
+<form name="quizForm" novalidate>
+  <input type="text" required ng-minlength=3 ng-model="formQuestion" />
+  <input type="text" required ng-minlength=1 ng-model="formAnswer" />
+</form>
+<button class="btn btn-default" ng-click="addItem(formQuestion, formAnswer)">Add</button>
+<button class="btn btn-default" ng-click="removeLast()">Remove</button>
+<button class="btn btn-default" ng-click="clearList()">Clear List</button>
+<p><a href="#/play" title="Play">&gt;</a></p>

@@ -10,60 +10,91 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require bootstrap 
  *= require_tree .
  *= require_self
  */
 
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      font-size: 24px;
-      background-color: limegreen;
-    }
-    html {
-    font-family: 'Questrial', sans-serif;
-    font-weight: 400; 
-    }
-    h1 {
-      font-size: 1.25em;
-    }
-    div, p, a{
-      font: verdana;
-      color: #FFF;
-      text-align: center;
-      text-decoration: none;
-    }
-    p {
-      font-size: 18px;
-    }
-    a {
-      font-size: 1.8em;
-      text-shadow: none;
-      -webkit-transition:0.5s all;
-     transition:0.5s all;
-    }
-    a:hover {
-    text-shadow: 2px 2px 4px #333;
-    }
-    h2 { 
-      font-size: 56px;
-    }
-    ul {
-      list-style: none;
-      line-height: 1.8em;
-    }
-  #home {
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    min-height: 300px;
-    margin-top: 12%;
-    width: 100%;
-    min-width: 400px;
-  }
+ input {
+  color:black;
+  border-radius: 5px
+}
 
-    
+hr {
+  border-top: 1px solid black !important;
+}
+
+ body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 24px;
+  background-color: #eee;
+}
+html {
+  font-family: 'Questrial', sans-serif;
+  font-weight: 400; 
+}
+h1 {
+  font-size: 1.25em;
+  text-align: center;
+}
+div, p, a{
+  font: verdana;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  text-align: center;
+}
+p {
+  font-size: 18px;
+}
+a {
+  font-size: 1.8em;
+  text-shadow: none;
+  -webkit-transition:0.5s all;
+  transition:0.5s all;
+}
+a:hover {
+  text-shadow: 2px 2px 4px #333;
+}
+h2 { 
+  font-size: 56px;
+}
+ul {
+  list-style: none;
+  line-height: 1.8em;
+  text-align: center;
+  margin-left: -2em;
+}
+
+
+#home {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 300px;
+  margin-top: 12%;
+  width: 100%;
+  min-width: 400px;
+}
+
+.nav-fluid {
+  margin-top: 1em;
+}
+
+input.ng-invalid.ng-dirty {
+  -moz-box-shadow: 0 0 1px 1px red;
+  -webkit-box-shadow: 0 0 1px 1px red;
+  box-shadow: 0 0 1px 1px red;
+}
+
+input.ng-valid {
+ -moz-box-shadow: 0 0 1px 1px green;
+  -webkit-box-shadow: 0 0 1px 1px green;
+  box-shadow: 0 0 1px 1px green; 
+}
+
 
 footer {
   padding-top: 50px;
