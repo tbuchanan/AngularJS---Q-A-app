@@ -1,7 +1,6 @@
-
 'use strict';
 
-var MyApp = angular.module('MyApp', ['ngRoute']);
+var MyApp = angular.module('MyApp', ['ngRoute', 'ngAnimate']);
   
 MyApp.config(function($routeProvider){
   $routeProvider
@@ -16,7 +15,7 @@ MyApp.config(function($routeProvider){
     })      
 
     .when("/play", { 
-      controller: "PlayCtrl",
+      controller: "PlaysCtrl",
       templateUrl: "/assets/MyApp/views/play.html"
     })
 
@@ -25,7 +24,10 @@ MyApp.config(function($routeProvider){
 
 MyApp.factory('Quiz', function(){
 
-  var data = [{q: 'Are you ready?', a: 'yes'}];
+  var data = [
+    {q: 'Are you ready?', a: 'yes'},
+    {q: '1+1', a: '2'}
+  ];
 
     return {
       getData: function() {

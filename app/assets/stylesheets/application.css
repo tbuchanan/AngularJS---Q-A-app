@@ -15,7 +15,36 @@
  *= require_self
  */
 
- input {
+/*angular animations*/
+.flip .ng-leave.ng-leave-active {
+  opacity: 0;
+}
+
+.flip .ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.flip .ng-enter {
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.flip .ng-leave {
+  -webkit-transition: 1s all;
+  transition: 0.5s all;
+}
+
+.flip {
+  -webkit-transition: 0.5s;
+  transition: 0.5s all;
+  margin-top: 0;
+}
+
+.flip-add {
+  margin-top: -50%
+}
+
+input {
   color:black;
   border-radius: 5px
 }

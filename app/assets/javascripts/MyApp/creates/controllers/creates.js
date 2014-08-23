@@ -1,6 +1,5 @@
 'use strict';
 
-
 function CreatesCtrl(Quiz, $scope) {
  
   $scope.quiz = $scope.quiz || Quiz.getData();
