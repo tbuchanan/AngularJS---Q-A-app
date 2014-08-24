@@ -8,7 +8,7 @@ Gems used:
 
 ###To run app
 
-		git clone git@github.com:tbuchanan/Angular_test_app.git
+		git clone git@github.com:tbuchanan/AngularJS---Q-A-app.git
 		
 		bundle install
 
