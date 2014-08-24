@@ -12,4 +12,7 @@ Gems used:
 		
 		bundle install
 
-		rails s (localhost:3000)
+		rails s 
+		
+
+#####Open app in browser: [localhost:3000](http://localhost:3000/)
