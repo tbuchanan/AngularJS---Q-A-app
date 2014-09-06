@@ -13,3 +13,18 @@
 <button class="btn btn-default" ng-click="removeLast()">Remove</button>
 <button class="btn btn-default" ng-click="clearList()">Clear List</button>
 <p><a href="#/play" title="Play">&gt;</a></p>
+
+<!-- query test -->
+<div>
+  Search:<input ng-model="query" type="text"/>
+    <table>
+      <tr>
+        <th>question</th>
+        <th>equation</th>
+    </tr>
+    <tr ng-repeat="q in quiz | filter:query ">
+      <td>{{q.q}}</td>
+      <td>{{q.a}}</td>
+    </tr>
+    </table>
+</div>

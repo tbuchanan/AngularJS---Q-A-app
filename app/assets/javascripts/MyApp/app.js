@@ -28,7 +28,7 @@ MyApp.factory('Quiz', function(){
     {q: 'Are you ready?', a: 'yes'},
     {q: '1+1', a: '2'}
   ];
-
+    // return the factory object
     return {
       getData: function() {
         return data;
